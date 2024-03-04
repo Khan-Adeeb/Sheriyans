@@ -103,3 +103,6 @@
     flex-shrink: 0;
     object-fit: cover;    
 }
+@media (min-width: 350px) and (max-width:600px) {
+    
+}
