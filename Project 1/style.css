@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+nav a{
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+nav i{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    padding: 5px 20px;
+}
+.container{
+    height: 50vh;
+}
+.headingText h4{
+    font-weight: 400;
+    font-size: 11vh;
+}
+.headingText{
+    padding: 20px 0px 0px 120px;
+    line-height: 14vh;
+}
+.container2{
+    display: flex;
+    width: 100%;
+    height: 42.5vh;
+}
+.left{
+    width: 67%;
+    padding: 12px 120px;
+}
+.left h6{
+    font-size: 3vh;
+    font-weight: 410;
+    letter-spacing: -1.5px;
+}
+
+
+/* I TRIED USING MY METHOD , THIS also works but not as good as below */
+/* .right{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 39px 0px 0px 25px;
+}
+.right a{
+    font-size: 2.8vh;
+    color: black;
+    border-top: 2px solid black;
+    padding: 20px;
+}
+.right i{
+    visibility: hidden;
+    margin-left: 200px;
+}
+.right a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.right a:hover i{
+    visibility :visible ;
+} */
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 39px 20px 0px 0px;
+}
+.elem{
+    width: 80%;
+    padding: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+}
+.elem a{
+    font-size: 2.8vh;
+    color: black;
+}
+.elem i{
+    visibility: hidden;
+    font-size: 2.8vh;
+}
+.elem a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.elem:hover i{
+    visibility :visible ;
+    font-size: 2.8vh;
+    font-weight: bold;
+} 
+.image{
+    background-image: url("/Project 1/brooke-cagle-kvKSL7B6eTo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 51vh;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    nav a{
+        display: none;
+    }
+    nav i{
+        font-size: 28px;
+    }
+    nav{
+        height: 80px;
+    }
+    .container{
+        /* background-color: aqua; */
+        height: 23vh;
+    }
+    .headingText h4{
+        font-weight: 410;
+        font-size: 4.3vh;
+    }
+    .headingText{
+        padding: 10px 0px 0px 20px;
+        line-height: 7vh;
+    }
+    .container2{
+        display: block;
+        width: 100%;
+        height: 48vh;
+    }
+    .left{
+        width: 90%;
+        padding: 10px 0px 10px 15px;
+    }
+    .left h6{
+        font-size: 2.2vh;
+        font-weight: 410;
+        letter-spacing: -1.5px;
+    }
+    .right{
+        width: 100%;
+        padding: 30px 10px 10px 10px;
+    }
+    .image{
+        background-image: url("/Project 1/brooke-cagle-kvKSL7B6eTo-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 35vh;
+        width: 100%;
+    }
+
+}

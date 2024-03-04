@@ -1,0 +1,161 @@
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: "Noto Sans", sans-serif;
+        font-style: normal;
+    }
+    .main{
+        height: 90%;
+        width: 90%;
+        display: flex;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+    .left{
+        width: 48%;
+        height: 100%;
+    }
+    .right{
+        width: 27%;
+        height: 100%;
+        padding-top: 5%;
+    }
+
+    .text{
+        height: 47vh;
+    }
+
+    .text h2 {
+        font-size: 15vh;
+        font-weight: 400;
+        line-height: 14vh;
+    }
+
+    .button{
+        border-radius: 20px;
+        border: 1px solid black;
+        width: fit-content;
+        padding: 4px 8px;
+        display: flex;
+    }
+    .color1{
+        background-color: cadetblue;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        margin: 0px 5px 0px 15px;
+    }
+    .color2{
+        background-color:tomato;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    }
+    .discription{
+        padding-top: 45px;
+    }
+    .discription p{
+        font-weight: 500;
+        font-size: 1.7vh;
+    }
+    .rating i{
+        font-size: 10px;
+        align-self: center;
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.2vh;
+    }
+    .rating{
+        display: flex;
+    }
+    .image{
+        background-image: url("../Project 2/philip-martin-5aGUyCW_PJw-unsplash.jpg");
+        background-size: cover;
+        background-position: top;
+        height: 65.2vh;
+        width: 100%;
+    }
+
+    .circle{
+        position: absolute;
+        top: 50%;
+        right: 17%;
+        background-color: rgb(41, 41, 41);
+        color: ghostwhite;
+        padding: 60px 34px;
+        border-radius: 50%;
+    }
+    .circle h5{
+        font-weight: 400;
+        font-size: 2vh;
+    }
+
+    .rotate{
+        position: absolute;
+        right: 39%;
+        bottom: 4%;
+    }
+    .rotate h5{
+        rotate: -90deg;
+        transform-origin: 0 0;
+        font-size: 3vh;
+
+    }
+    @media (max-width: 600px) {
+        .main{
+            height: 90%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 8%;
+            padding-left: 10%;
+        }
+        .left{
+            width: 100%;
+            height: 100%;
+        }
+        .right{
+            width: 90%;
+            height: 65%;
+            padding-top: 15%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .text{
+            height: 35vh;
+        }
+        
+        .text h2 {
+            font-size: 18vw;
+            font-weight: 400;
+            line-height: 14vh;
+        }
+        .discription p{
+            font-size: 3vw;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.2vh;
+        }
+        .image{
+            background-position: center;
+            height: 50vh;
+        }
+        .circle{
+            top: 65%;
+            right: 3%;
+            padding: 45px 17px;
+        }
+        .rotate{
+            left : 10%;
+            bottom: 29%;
+        }
+        .rotate h5{
+            rotate: 0deg;
+            font-size:6vw;
+        }
+    }

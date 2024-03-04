@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand", sans-serif;
+    background-color: hsl(180deg 3.23% 93.92%);
+}
+.main {
+    padding: 0px;
+    margin: 0px;
+}
+.nav{
+    padding: 30px 50px;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+}
+.dot{
+    display: flex;
+}
+.two{
+    height: 17px;
+    width: 17px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+}
+.one{
+    height: 17px;
+    width: 17px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+}
+.text{
+    display: flex;
+    gap: 35px;
+}
+.text h5{
+    color: rgb(41, 41, 41);
+    font-weight: 550;
+    letter-spacing: -0.9px;
+
+}
+.light{
+    color: hsl(0, 0%, 68%) !important;
+}
+
+.navDown{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    gap: 65px;
+
+}
+.navDown h4{
+    color: rgb(41, 41, 41);
+    font-weight: 500;
+    letter-spacing: -0.9px;
+}
+
+.container{
+    height: calc(87vh - 60px);  /* can minus different values*/
+}
+.textContent{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.textContent::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+.textContent::-webkit-scrollbar-thumb{
+    background-color: hsl(15deg 80% 62.75%);
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-size: 120px;
+    font-weight: 400;
+}
+.imageContainer{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+.imageContainer::-webkit-scrollbar{
+    display: none;
+}
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;    
+}
