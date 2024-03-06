@@ -4,10 +4,6 @@
     font-family: "Quicksand", sans-serif;
     background-color: hsl(180deg 3.23% 93.92%);
 }
-.main {
-    padding: 0px;
-    margin: 0px;
-}
 .nav{
     padding: 30px 50px;
 }
@@ -31,6 +27,9 @@
     width: 17px;
     background-color: rgb(41, 41, 41);
     border-radius: 50%;
+}
+.text i{
+    visibility: hidden;
 }
 .text{
     display: flex;
@@ -85,7 +84,7 @@
     justify-content: center;
 }
 .elem h1{
-    font-size: 120px;
+    font-size: 9vw;
     font-weight: 400;
 }
 .imageContainer{
@@ -103,6 +102,52 @@
     flex-shrink: 0;
     object-fit: cover;    
 }
-@media (min-width: 350px) and (max-width:600px) {
-    
+@media (min-width: 300px) and (max-width:600px) {
+    .nav{
+        padding: 30px 22px 0px 22px;
+    }
+    .navTop{
+        height: 5vh;
+    }
+    .two{
+        height: 22px;
+        width: 22px;
+    }
+    .one{
+        height: 22px;
+        width: 22px;
+    }
+    .text i{
+        visibility: visible;
+    }
+    .text h5{
+        display: none;
+    }
+    .navDown{
+        height: 8vh;
+        gap: 0px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .navDown h4{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .container{
+        height: calc(79vh - 60px);
+    }
+    .textContent{
+        height: 35%;
+    }
+    .elem{
+        height: 100%;
+        width: 70%;
+    }
+    .elem h1{
+        font-size: 12vw;
+        font-weight: 400;
+    }
+    .imageContainer{
+        height: 82%;
+    }
 }
