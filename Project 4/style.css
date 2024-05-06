@@ -1,0 +1,344 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+.main{
+    padding-top: 0.1px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(248,248,248);
+}
+.nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.nav h1{
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    letter-spacing: -5.5px;
+    font-size: 56px;
+    padding-bottom: 20px;
+    width: 23.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav h1::after{
+    content: "C";
+    margin-left: 12px;
+    font-size: 10px;
+    color: black;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 0px 10px 0px 4px;
+    border: 2px solid black;    
+}
+.nav h1::before{
+    content: "model management";
+    font-size: 1vw;
+    font-weight: 500;
+    color: rgb(111,111,111);
+    letter-spacing: -1px;
+    position: absolute;
+    top: 1.8%;
+    left: 9%;
+
+}
+
+/* .nav h1::after{
+    content: "©️";
+    margin-left: 12px;
+    font-size: 1.3vw;
+    color: black;
+    font-weight: 500;
+} */
+
+.nav h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border-right: 2px solid black;
+    width: 20.1%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+.nav i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    width: 12%;
+    height: 100%;
+    cursor: pointer;
+
+}
+.nav h2:nth-child(4){
+    width: 25%;
+}
+
+.hero{
+    height: calc(94vh - 6vw);
+    width: calc(100% - 10vw);
+    padding: 3vw 5vw;
+    position: relative;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 25%;
+    width: 84%;
+    /* background-color: rgba(0, 255, 255, 0.607); */
+    position: absolute;
+    bottom: 6.8%;
+    padding: 4vw 3vw;
+    color: white;
+}
+
+.text1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.text1 h1{
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 90%;
+}
+.text1 h2{
+    font-weight: 400;
+    font-size: 16px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    padding: 20px 25px;
+}
+.text2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #ffffff;
+
+}
+.text2 h4{
+    margin-top: 20px;
+    font-weight: 400
+}
+
+.text2 i{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.people{
+    /* height: 100%; */
+    width: calc(100% - 8vw);
+    /* background-color: aquamarine; */
+    padding: 4vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.people img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0px 20px ;
+    object-fit: cover;
+}
+.container{
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.elem h5{
+    font-weight: 500;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+
+.search{
+    height: 12vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.alpha{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 4vw;
+
+}
+.alpha h1{
+    margin-right: 50px;
+    font-weight: 400;
+    text-decoration: underline;
+    font-style: italic;
+}
+.alpha h3{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.img1{
+    height: calc(94vh - 6vw);
+    width: calc(100% - 10vw);
+    padding: 3vw 5vw;
+    position: relative;
+}
+.cont{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.category{
+    height: 100vh;
+    width: calc(100% - 10vw);
+    padding: 3vw 5vw;
+    position: relative;
+}
+.cat{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.cat h1{
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    letter-spacing: -4px;
+    font-size: 3.2vw;
+    font-stretch: extra-expanded;
+    margin-bottom: 8vh;
+}
+.cats{
+    height: 18vh;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 1.2vw;
+}
+.cats:nth-last-child(1){
+    border-bottom: 2px solid #000;
+}
+.cats img{
+    height: 8vw;
+    width: 8vw;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    transition: ease-in 0.3s;
+}
+.i1{
+    left: 15%;
+}
+.i2{
+    left: 45%;
+}
+.i3{
+    left: 30%;
+}
+.cats h4{
+    width: 6%;
+    font-weight: 450;
+}
+.hui h3{
+    font-weight: 500;
+    font-size: 3vw;
+}
+.hui h5{
+    font-weight: 600;
+}
+.cats:hover img{
+    opacity: 1;
+}
+.cats:hover{
+    background-color: #ebebeb;
+}
+
+.marque{
+    height: 13vh;
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+.scrolling h1{
+    display: inline-block;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-size: 4vw;
+    font-family: "Jost", sans-serif;
+    animation-name: marq;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-right: 16px;
+    letter-spacing: 2px;
+}
+
+@keyframes marq {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX( calc( -100% - 20px) );
+    }
+}

@@ -1,0 +1,116 @@
+*{
+    padding: 5vw;
+    margin: 0px;
+    background-color: black;
+}
+
+/* img{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 60%;
+        background-color: teal;
+        rotate: 180deg;
+    }
+
+
+} */
+
+/* img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    animation-name: sinchan;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+@keyframes sinchan {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: 80%;
+        top: 0;
+    }
+    100% {
+        left: 80%;
+        top: 50%;
+    }
+} */
+
+/* .box1{
+    height: 200px;
+    width: 200px;
+    background-color:lightcoral;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color:lightseagreen;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+@keyframes anime {
+    from{
+        left: 0;
+
+    }
+    to{
+        left: 80%;
+    }
+} */
+
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid aquamarine;
+    font-size: 24px;
+    color: aqua;
+    position: relative;
+    z-index: 2;
+    transition: all linear 0.25s;
+    overflow: hidden;
+}
+button::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:cyan;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all linear 0.3s;
+    z-index: -1;
+}
+button:hover::after{
+    transform: translate(-50%, -50%) scale(3.2);
+}
+button:hover{
+    color: black;
+}
